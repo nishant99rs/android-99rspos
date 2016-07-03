@@ -1,0 +1,108 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100.0"
+    android:background="#ff9033"
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="10.0"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.0"
+            android:text="Description"
+            android:textColor="#000000"
+            android:id="@+id/textView3"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:background="#009986"
+            android:paddingLeft="50dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.0"
+            android:text="Tax Rate"
+            android:textColor="#000000"
+            android:id="@+id/textView4"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:background="#009986"
+            android:paddingRight="20dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/buttons_layout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="80.0">
+
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:layout_centerHorizontal="true"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="10.0"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="OK"
+            android:id="@+id/tax_ok_button"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_border"
+            android:layout_weight="10.0"
+
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

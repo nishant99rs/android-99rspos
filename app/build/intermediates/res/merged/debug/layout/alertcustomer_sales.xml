@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fffdd0">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="5.0"
+        android:paddingTop="45dp"
+
+        >
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:fontFamily="sens-serif"
+            android:textSize="18px"
+            android:text="SEARCH CUSTOMER"
+            android:paddingLeft="60dp"
+            android:layout_centerInParent="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout1"
+        android:paddingLeft="60dp"
+        android:paddingTop="20dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+
+            >
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchcust"
+                android:ems="10"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:drawableRight="@drawable/cross_arrow_icon"
+                android:background="@drawable/border_style"
+                android:layout_weight="0.85"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout2"
+        android:paddingTop="10dp"
+
+        >
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="(OR)"
+            android:textSize="14px"
+            android:paddingRight="60dp"
+            android:layout_centerInParent="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout3"
+        android:paddingLeft="190dp"
+        android:layout_weight="5.0"
+        android:paddingTop="20dp"
+
+
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="25px"
+            android:text="ADD CUSTOMER"
+            android:id="@+id/addnewcustomer_button"
+            android:textColor="#000000"
+            android:background="#ff9033"
+            android:fontFamily="sens-serif"
+            android:textSize="20px"
+            android:gravity="center"
+            android:onClick="view"
+
+
+
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100.0"
+    android:background="#ff9033"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:layout_weight="100.0"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="POS Date"
+                android:textColor="#000000"
+                android:id="@+id/textView1"
+                android:textSize="20px"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="30dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:ems="10"
+                android:id="@+id/posdate"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+               />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Start Date"
+                android:textColor="#000000"
+                android:id="@+id/textView2"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="30dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:ems="5"
+                android:id="@+id/startdate"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+              />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Start Cash *"
+                android:textColor="#000000"
+                android:id="@+id/textView3"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="30dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/startcash"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:visibility="invisible"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Store id"
+                android:textColor="#000000"
+                android:id="@+id/textViewdtore"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="30dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/storeid"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="5.0"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:text="OPEN CASH"
+            android:textSize="20px"
+            android:id="@+id/opencash_button"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_border"
+            android:layout_weight="2.5"
+            android:onClick="view"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:textSize="20px"
+            android:id="@+id/day_close_button"
+            android:textColor="#FFFFFF"
+            android:text="EXIT"
+            android:background="@drawable/button_border"
+            android:layout_weight="2.5"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,277 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100.0"
+    android:background="#fffdd0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="5.0"
+        android:paddingTop="5dp"
+
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_update_button"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/arrow"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:paddingLeft="60dp"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="5.0"
+        android:paddingTop="5dp"
+
+        >
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="ADD NEW CUSTOMER"
+            android:textSize="30dp"
+            android:paddingLeft="60dp"
+            android:layout_centerInParent="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="5.0"
+        android:paddingTop="10dp"
+
+        >
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="CUSTOMER NAME"
+            android:textSize="20dp"
+            android:paddingLeft="60dp"
+            android:layout_centerInParent="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="10.0"
+        android:paddingLeft="60dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+
+            >
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/customername"
+                android:ems="10"
+                android:text="customer name"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:background="@drawable/border_style"
+                android:layout_weight="0.85"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="5.0"
+        android:paddingTop="5dp"
+
+        >
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="MOBILE NUMBER"
+            android:textSize="20dp"
+            android:paddingLeft="60dp"
+            android:layout_centerInParent="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="10.0"
+        android:paddingLeft="60dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+
+            >
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mobileno"
+                android:ems="10"
+                android:text="0000000000"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:background="@drawable/border_style"
+                android:layout_weight="0.85"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="5.0"
+        android:paddingTop="5dp"
+
+        >
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="EMAIL ADDRESS"
+            android:textSize="20dp"
+            android:paddingLeft="60dp"
+            android:layout_centerInParent="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="10.0"
+        android:paddingLeft="60dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+
+            >
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailaddress"
+                android:ems="10"
+                android:text="info@gmail.com"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:background="@drawable/border_style"
+                android:layout_weight="0.85"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="10.0"
+        android:paddingLeft="60dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+
+            >
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send invoice by email"
+                android:ems="10"
+                android:textSize="20dp"
+                android:layout_weight="1.0"
+                android:id="@+id/checkBox" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="5.0"
+        android:paddingTop="5dp"
+        android:paddingLeft="190dp"
+
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="CANCEL"
+            android:id="@+id/button_cancel"
+            android:textColor="#000000"
+            android:background="#ff9033"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="0.1"
+            android:textSize="20dp"
+            android:layout_marginEnd="90dp"
+
+
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:id="@+id/button_done"
+            android:background="#ff9033"
+            android:text="ADD ITEM"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_weight="0.1"
+            android:layout_marginEnd="120dp"
+
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

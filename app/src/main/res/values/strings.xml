@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="statusdflt"></string>
+    <string name="browsernotifydflt"></string>
+    <string name="resultdflt"></string>
+    <string name="app_name">GoSync</string>
+    <string name="title_activity_activity1">Activity1</string>
+    <string name="action_settings">Back</string>
+    <string name="email"> Email</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_activity_frist">ActivityFrist</string>
+    <string name="title_activity_display_data">DisplayData</string>
+    <string name="select">Choose a country</string>
+    <string name="select2">Choose an item</string>
+    <string name="title_activity_store">Store</string>
+    <string-array name="active_Status_for_Report">
+        <item>Y</item>
+        <item>N</item>
+        <item>All</item>
+    </string-array>
+    <string name="title_activity_activitycustomer">Activitycustomer</string>
+    <string name="title_activity_master_screen1">MasterScreen1</string>
+    <string name="title_activity_master_screen2">MasterScreen2</string>
+    <string name="customer">find a customer;</string>
+    <string name="search">Search</string>
+    <string name="title_activity_activity_vendor">ActivityVendor</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="hint_text">Enter Ad Text</string>
+    <string name="hint_start">Select Start Date</string>
+    <string name="hint_end">Select End Date</string>
+
+    <string name="text">N</string>
+    <string-array name="country_array">
+        <item>SriLanka</item>
+    </string-array>
+    <string-array name="inventory_array">
+        <item>Y</item>
+        <item>N</item>
+    </string-array>
+    <string-array name="active_Status">
+        <item>Y</item>
+        <item>N</item>
+    </string-array>
+    <string-array name="active_array">
+        <item>"Retail_ad_ticker"</item>
+        <item>"Retail_ad_blinkinglogo"</item>
+        <item>"Retail_ad_store_main"</item>
+        <item>"retail_cust_loyality"</item>
+        <item>"retail_card_define"</item>
+        <item>"rule_defination"</item>
+    </string-array>
+
+
+    <string name="title_activity_activity_local_product">ActivityLocalProduct</string>
+    <string name="title_activity_activity_tax">ActivityTax</string>
+    <string name="title_activity_activity_store">ActivityStore</string>
+    <string name="title_activity_activity_product">ActivityProduct</string>
+    <string name="title_activity_activitypurchase">Activitypurchase</string>
+    <string name="title_activity_activity_sales">ActivitySales</string>
+    <string name="title_activity_activity_day_open">ActivityDayOpen</string>
+    <string name="title_activity_activity_main_sales">ActivityMainSales</string>
+    <string name="title_activity_activity_tender">ActivityTender</string>
+    <string name="title_activity_activity_scheme">ActivityScheme</string>
+    <string name="title_activity_activitypurchaseitem">Activitypurchaseitem</string>
+    <string name="title_activity_activity_salesbill">ActivitySalesbill</string>
+    <string name="title_activity_activity_stores2">ActivityStores2</string>
+    <string name="title_activity_activity_maintain">ActivityMaintain</string>
+    <string name="title_activity_activity_maintain_showlist">ActivityMaintainShowlist</string>
+    <string name="title_activity_activity_maintainfinal">ActivityMaintainfinal</string>
+    <string name="title_activity_activitylocal_vendor">ActivitylocalVendor</string>
+    <string name="title_activity_activity_report">ActivityReport</string>
+    <string name="title_activity_activity_main_maintainence">ActivityMainMaintainence</string>
+    <string name="title_activity_activityinternetbill">Activityinternetbill</string>
+</resources>

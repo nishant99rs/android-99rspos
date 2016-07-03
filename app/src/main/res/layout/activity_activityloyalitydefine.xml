@@ -1,0 +1,233 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9033"
+    android:orientation="vertical"
+    android:weightSum="100"
+
+    tools:context="com.mycompany.apps.Retailcardupdate">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="100.0"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/buttons_layout"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingTop="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Store Id"
+                android:textColor="#000000"
+                android:id="@+id/textViewstoteid"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editstoreid"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingRight="5dp"
+
+                android:layout_gravity="center_vertical"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Id"
+                android:textColor="#000000"
+                android:id="@+id/textViewId"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editid"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingRight="5dp"
+
+                android:layout_gravity="center_vertical"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Card Type"
+                android:textColor="#000000"
+                android:id="@+id/textviewcardtype"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editcardtype"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingRight="5dp"
+
+                android:layout_gravity="center_vertical"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="pointrange"
+                android:textColor="#000000"
+                android:id="@+id/textviewpointrange"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editpointrange"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingRight="5dp"
+                android:background="@drawable/border_style"
+                android:layout_gravity="center_vertical"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:text="UPDATE"
+            android:id="@+id/buttonupdate"
+            android:background="@drawable/button_border"
+            android:textColor="#ffffff"
+            android:layout_weight="2.0"
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:text="EXIT"
+            android:background="@drawable/button_border"
+            android:id="@+id/buttonexit"
+            android:textColor="#ffffff"
+            android:layout_weight="2.0"
+
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

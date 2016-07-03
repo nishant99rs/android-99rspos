@@ -1,0 +1,84 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.retail_99_solutions.Purchase_Page"
+    android:orientation="vertical"
+    android:background="#FF9033">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="90.0"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/DirctPayCashPaymntReport"
+            android:text="Direct Pay By Cash"
+            android:textColor="#000000"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="34.5"
+            android:scaleType="fitCenter"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/IndirctPayCashPaymntReport"
+            android:text="Indirect Pay By Cash"
+            android:textColor="#000000"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="34.5"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="90.0"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/DirctPayChequePaymntReport"
+            android:text="Direct Pay By Cheque"
+            android:textColor="#000000"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton15"
+            android:layout_toEndOf="@+id/imageButton15"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="34.5"
+            android:scaleType="fitCenter"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/IndirctPayChequePaymntReport"
+            android:text="Indirect Pay By Cheque"
+            android:textColor="#000000"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton15"
+            android:layout_toEndOf="@+id/imageButton15"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="34.5"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+</LinearLayout>

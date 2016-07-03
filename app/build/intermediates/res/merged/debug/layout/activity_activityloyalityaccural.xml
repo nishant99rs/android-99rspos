@@ -1,0 +1,286 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9033"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.mycompany.apps.Retailacoountupdate">
+
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="100.0"
+        android:paddingTop="10dp"
+
+
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingTop="5dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Store Id"
+                android:textColor="#000000"
+                android:id="@+id/textViewstoteid"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:paddingLeft="25dp"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editstoreid"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingRight="5dp"
+                android:layout_gravity="center_vertical"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingTop="5dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="SNo"
+                android:textColor="#000000"
+                android:id="@+id/textViewsno"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:paddingLeft="25dp"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editsno"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingRight="25dp"
+
+                android:layout_gravity="center_vertical"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingTop="5dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Card Type"
+                android:textColor="#000000"
+                android:id="@+id/textviewcardtype"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:paddingLeft="25dp"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editcardtype"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingRight="5dp"
+                android:layout_gravity="center_vertical"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingTop="5dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Per Ton Point"
+                android:textColor="#000000"
+                android:id="@+id/textviewpertonpoint"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:paddingLeft="25dp"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editpertonpoint"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingRight="15dp"
+
+                android:layout_gravity="center_vertical"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingTop="5dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Base Value"
+                android:textColor="#000000"
+                android:id="@+id/textviewbasevalue"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:paddingLeft="25dp"
+
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editbasevalue"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingRight="5dp"
+                android:background="@drawable/border_style"
+                android:layout_gravity="center_vertical"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2.0"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:text="UPDATE"
+            android:background="@drawable/button_border"
+            android:id="@+id/buttonupdate"
+            android:textColor="#ffffff"
+            android:layout_weight="2.5"
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:text="EXIT"
+            android:background="@drawable/button_border"
+            android:id="@+id/buttonexit"
+            android:textColor="#ffffff"
+            android:layout_weight="2.5"
+
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

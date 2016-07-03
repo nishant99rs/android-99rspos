@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="100.0"
+    android:background="#FF9033"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="95.0"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:id="@+id/layer2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="User Id*"
+                android:textColor="#000000"
+                android:id="@+id/textView1"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingRight="20dp"
+
+
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/username"
+                android:textColor="#000000"
+                android:textSize="20px"
+                android:paddingRight="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:weightSum="1.0">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Password*"
+                android:textColor="#000000"
+                android:id="@+id/textView2"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:inputType="numberPassword"
+                android:textColor="#000000"
+                android:ems="10"
+                android:id="@+id/userpassword"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.0"
+        android:orientation="horizontal"
+        android:id="@+id/layer3"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:id="@+id/loginbutton"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_border"
+            android:layout_weight="5.0"
+            />
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="CANCEL"-->
+            <!--android:id="@+id/Cancelbutton"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:background="@drawable/button_border"-->
+            <!--android:layout_weight="2.5"-->
+           <!--/>-->
+    </LinearLayout>
+</LinearLayout>

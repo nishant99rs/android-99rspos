@@ -1,0 +1,468 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100.0"
+    android:background="#ff9033"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_weight="100"
+
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Search"
+                android:textSize="20px"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:id="@+id/localprod_idtextView"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="80dp"
+                />
+
+            <com.mycompany.apps.CustomAuto
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:singleLine="true"
+                android:completionThreshold="1"
+                android:hint="ENTER PRODUCT NAME"
+                android:textColor="#000000"
+                android:textSize="14px"
+                android:id="@+id/myautocomplete"
+                android:background="@drawable/border_style">
+            </com.mycompany.apps.CustomAuto>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:weightSum="1.0"
+            android:paddingRight="10dp"
+
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Product ID"
+                android:textSize="20px"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/localprod_nametextView"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="80dp"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:ems="10"
+                android:textSize="20px"
+                android:id="@+id/localprod_prodid"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:visibility="visible"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            >
+
+            <EditText
+                android:id="@+id/product_auto_complete"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:singleLine="true"
+                android:background="@drawable/border_style"
+                android:textSize="20px"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Product Name *"
+                android:textStyle="bold"
+                android:textSize="20px"
+                android:textColor="#000000"
+                android:id="@+id/localprod_prodnameText"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="80dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:textSize="15px"
+                android:id="@+id/localprod_prodname"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:weightSum="1.0"
+            android:paddingRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Barcode"
+                android:textSize="20px"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:id="@+id/counterid_textView"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="80dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:ems="10"
+                android:textSize="15px"
+                android:id="@+id/localprod_barcode"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Address1"
+                android:textColor="#000000"
+                android:id="@+id/address1_textView"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/store_address1"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="MRP *"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/emailid_textView"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="80dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/localprod_mrp"
+                android:textSize="15px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Selling Price *"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/telephone_textView"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="80dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/localprod_sellingprice"
+                android:textSize="15px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Purchase Price *"
+                android:textColor="#000000"
+                android:id="@+id/city_textView"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="80dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/localprod_purchaseprice"
+                android:textSize="15px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Active *"
+                android:textColor="#000000"
+                android:id="@+id/statecountry_textView"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="80dp"
+                />
+
+            <Spinner
+                android:id="@+id/localprod_active"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:digits="y,n,Y,N"
+                android:layout_weight="0.6"
+                android:background="@drawable/border_style"
+                android:textSize="15px"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Margin"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:id="@+id/margin_textView"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="80dp"
+                />
+
+            <TextView
+
+                android:id="@+id/localprod_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_weight="0.6"
+                android:textSize="20px"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="3.0"
+
+
+        >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="UPDATE"
+            android:id="@+id/localprod_edit_button"
+            android:textColor="#FFFFFF"
+            android:textSize="20px"
+            android:fontFamily="sans-serif"
+            android:background="@drawable/button_border"
+            android:layout_weight="1.0"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="CLEAR"
+            android:textSize="20px"
+            android:id="@+id/localprod_clear_button"
+            android:fontFamily="sans-serif"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_border"
+            android:layout_weight="1.0"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="EXIT"
+            android:textSize="20px"
+            android:fontFamily="sans-serif"
+            android:id="@+id/localprod_exit_button"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_border"
+            android:layout_weight="1.0"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100.0">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:layout_width="520px"
+            android:layout_height="fill_parent"
+            android:text="Item name"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:paddingRight="80dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/PurchaseproductName"/>
+
+
+        <EditText
+
+            android:layout_width="200px"
+            android:layout_height="fill_parent"
+            android:inputType="text"
+            android:text=""
+            android:digits="a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X,Y,Z"
+            android:maxLength="3"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:id="@+id/purchaseshortname" />
+
+        <ImageButton
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cross_arrow_icon"
+            android:id="@+id/deleteButton" />
+
+
+
+    </LinearLayout>
+</LinearLayout>

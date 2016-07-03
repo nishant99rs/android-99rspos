@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#2787A4"
+    android:id="@+id/Sub">
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100.0"
+        android:background="#EF6C00"
+        android:layout_alignParentStart="true"
+        android:textAlignment="textStart"
+        android:layout_weight="10.0">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="45.0"
+            android:background="#EF6C00">
+
+            <TextView
+                android:id="@+id/rowtvProdct_Nm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destributor"
+                android:textColor="#ffffff"
+                android:textSize="14px"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20.0"
+            android:background="#EF6C00">
+
+        <TextView android:id="@+id/rowtv_Mrp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingLeft="0dp"
+            android:layout_weight="20.0"
+            android:layout_alignParentLeft="true"
+            android:text="1234456787"
+            android:textColor="#ffffff"
+            android:textSize="14px"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:textAppearanceLarge"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20.0"
+            android:background="#EF6C00">
+
+        <TextView android:id="@+id/rowtv_Price"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingLeft="0dp"
+            android:layout_weight="20.0"
+            android:layout_alignParentLeft="true"
+            android:text="984658978"
+            android:textColor="#ffffff"
+            android:textSize="14px"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15.0"
+            android:background="#EF6C00">
+
+        <TextView
+            android:id="@+id/rowtv_Actve"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="15.0"
+            android:paddingLeft="5dp"
+            android:text="India is mycountry"
+            android:textColor="#ffffff"
+            android:textSize="14px"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

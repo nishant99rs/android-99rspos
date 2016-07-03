@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9033">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:focusable="false"
+
+        >
+        <!--  <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.34"
+              android:inputType="number"
+              android:textColor="#000000"
+              android:text="PRODUCT NAME"
+              android:focusable="false"
+              android:ems="10"
+              android:fontFamily="sans-serif"
+              android:id="@+id/productname"
+              android:textSize="12px"
+              android:layout_gravity="center_vertical"
+              />-->
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:textColor="#000000"
+            android:text="PRODUCT NAME"
+            android:focusable="false"
+            android:fontFamily="sans-serif"
+            android:id="@+id/productname"
+            android:textSize="12px"
+            android:gravity="fill_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:focusable="false"
+            android:fontFamily="sans-serif"
+            android:text="BATCHNO"
+            android:ems="10"
+            android:id="@+id/batchno"
+            android:textSize="12px"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:text="EXPIRY"
+            android:focusable="false"
+            android:ems="10"
+            android:id="@+id/productexp"
+            android:textSize="12px"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:fontFamily="sans-serif"
+            />
+        <!--<TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.29"
+            android:inputType="number"
+            android:textColor="#ffffff"
+            android:text="P PRICE"
+            android:ems="10"
+            android:id="@+id/pprice"
+            android:textSize="12px"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center_vertical"
+            />-->
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="S PRICE"
+            android:ems="10"
+            android:id="@+id/sprice"
+            android:textSize="12px"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            />
+        <EditText
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:text="QTY"
+            android:ems="10"
+            android:selectAllOnFocus="true"
+            android:id="@+id/quantity"
+            android:textSize="12px"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:text="stock"
+            android:focusable="false"
+            android:ems="10"
+            android:id="@+id/quantitystock"
+            android:textSize="12px"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:text="convfact"
+            android:visibility="invisible"
+            android:focusable="false"
+            android:ems="10"
+            android:id="@+id/conersionfact"
+            android:textSize="1px"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:focusable="false"
+            android:textColor="#000000"
+            android:text="MRP"
+            android:ems="10"
+            android:id="@+id/mrp"
+            android:textSize="12px"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            />
+        <!--  <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.2"
+              android:inputType="number"
+              android:textColor="#ffffff"
+              android:text="Amount"
+              android:ems="10"
+              android:id="@+id/amount"
+              android:textSize="12px"
+              android:fontFamily="sans-serif"
+              android:layout_gravity="center_vertical"
+              />
+-->
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:text="Uom"
+            android:focusable="false"
+            android:ems="10"
+            android:id="@+id/uom"
+            android:textSize="12px"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:focusable="false"
+            android:text="Total"
+            android:ems="10"
+            android:id="@+id/total"
+            android:textSize="12px"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <ImageButton
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:src="@drawable/cross_arrow_icon"
+            android:id="@+id/deleteButton" />
+    </LinearLayout>
+
+
+</LinearLayout>

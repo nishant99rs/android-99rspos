@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="#ff9033">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1.0"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="2dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="0.5"
+                android:text="Bill Item Name"
+                android:textSize="30px"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center_vertical"
+                />
+
+
+            <Spinner
+                android:id="@+id/billlevelspinner"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:singleLine="true"
+                android:layout_weight="0.5"
+                android:textColor="#9B9B9B"
+                android:fontFamily="sans-serif"
+                android:inputType="textAutoComplete"
+                android:ems="10"
+                android:textSize="26px"
+                android:textColorHint="#000000"
+                android:focusable="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style" >
+            </Spinner>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="#4a4a4a"
+        android:paddingLeft="10dp"
+        android:layout_weight="2.0"
+        android:layout_marginTop="2dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:inputType="text"
+            android:layout_weight="1.0"
+            android:textColor="#ffffff"
+            android:text="Name"
+            android:textStyle="bold"
+            android:id="@+id/product10"
+            android:textSize="14dp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center_vertical" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:inputType="text"
+            android:layout_weight="1.0"
+            android:textColor="#ffffff"
+            android:text="Type"
+            android:textStyle="bold"
+            android:id="@+id/mproduct10"
+            android:textSize="14dp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center_vertical" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1.0"
+        >
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:inputType="text"
+            android:ems="10"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="1px"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="25px"
+            android:hint="Enter Name"
+            android:id="@+id/mbilllevlname"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:inputType="text"
+            android:ems="10"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="1px"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="25px"
+            android:hint="Enter Type"
+            android:id="@+id/mbilllevltype"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/buttons_layout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10.0"
+        android:orientation="horizontal"
+        >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:layout_weight="10.0"
+            android:layout_centerHorizontal="true"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="3.0">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="INSERT"
+            android:id="@+id/Billlevel_mbutton"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="bottom"
+            android:textSize="12dp"
+            android:background="@drawable/button_border"
+            android:layout_weight="1.0"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"
+            android:id="@+id/clearbilllevel"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="bottom"
+            android:textSize="12dp"
+            android:background="@drawable/button_border"
+            android:layout_weight="1.0"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="EXIT"
+            android:id="@+id/mBexit_button"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/button_border"
+            android:layout_weight="1.0"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+

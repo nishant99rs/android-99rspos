@@ -1,0 +1,357 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ff9033"
+    android:padding="15dp"
+    android:weightSum="1">
+    <!--  android:background="#fffdd0"-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="0dp"
+        android:gravity="left"
+        android:layout_weight="0.38">
+
+
+        <!--   <Button
+               android:layout_marginTop="20dp"
+               android:layout_width="250px"
+               android:layout_marginLeft="250px"
+               android:layout_height="60px"
+               android:id="@+id/NewPurchase"
+               android:textColor="#ffffff"
+               android:text=" New purchase"
+               android:fontFamily="sans-serif"
+               android:onClick="view"
+               android:background="#ff3300"
+               />-->
+        <!--
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50px"
+                    android:layout_width="260px"
+                    android:textColor="#000000"
+                    android:layout_height="40px"
+                    android:inputType="text"
+                    android:id="@+id/EnterInvoiceno"
+                    android:hint="Please Enter LastInvoiceno"
+                    android:background="@drawable/border_style"/>-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="0px"
+            android:gravity="left">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SelectvendorOrDistributorName"
+                android:textColor="#000000"
+                android:text=" Select vendor Or Distributor Name"
+                android:fontFamily="sans-serif"
+                android:layout_weight="0.5"
+                android:textSize="20px"
+                android:layout_marginTop="10px"
+                android:gravity="left|center_horizontal"
+
+
+                />
+            <Spinner
+                android:layout_marginEnd="10dp"
+                android:layout_width="250px"
+                android:layout_height="40px"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:paddingLeft="0dp"
+                android:layout_marginLeft="90px"
+                android:id="@+id/VendororDistributorName"
+                android:background="@drawable/border_style"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Selectpono"
+                android:textColor="#000000"
+                android:text=" Select GRN Number"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_weight="0.5"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="0px"
+                android:gravity="left|center_horizontal"
+
+
+                />
+            <Spinner
+                android:layout_marginEnd="10dp"
+                android:layout_width="250px"
+                android:layout_height="40px"
+                android:layout_marginLeft="218px"
+                android:layout_weight="0.5"
+                android:paddingLeft="0dp"
+                android:id="@+id/Lastinvoiceno"
+                android:gravity="center"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/border_style"/>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SelectVendorreturnID"
+                android:textColor="#000000"
+                android:text=" Select VendorReturnID"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_weight="0.5"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="0px"
+                android:gravity="left|center_horizontal"
+
+
+                />
+            <Spinner
+                android:layout_marginEnd="10dp"
+                android:layout_width="250px"
+                android:layout_height="40px"
+                android:layout_marginLeft="200px"
+                android:layout_weight="0.5"
+                android:paddingLeft="0dp"
+                android:id="@+id/VendorReturnID"
+                android:gravity="center"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/border_style"/>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:gravity="left">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Amount_Received"
+                android:textColor="#000000"
+                android:layout_weight="0.5"
+                android:text=" Amount Received"
+
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="0px"
+                android:gravity="left|center_horizontal"
+
+
+                />
+            <EditText
+
+                android:layout_width="250px"
+                android:layout_height="40px"
+                android:layout_marginRight="10dp"
+                android:id="@+id/VendorPayAmount"
+                android:textColor="#000000"
+                android:hint=" Amount Received"
+                android:fontFamily="sans-serif"
+
+                android:inputType="numberDecimal"
+                android:textSize="18px"
+                android:layout_weight="0.5"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="240px"
+                android:gravity="left"
+                android:background="@drawable/border_style"
+                />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:gravity="left">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/grandAmount"
+                android:textColor="#000000"
+                android:text=" Grand Amount"
+                android:layout_weight="0.5"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="0px"
+                android:gravity="left|center_horizontal"
+
+
+                />
+            <TextView
+
+                android:layout_width="250px"
+                android:layout_height="40px"
+                android:id="@+id/VendorPayGrandtotal"
+                android:textColor="#000000"
+                android:layout_weight="0.5"
+                android:hint="Grand Amount"
+                android:fontFamily="sans-serif"
+                android:textSize="18px"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="270px"
+                android:layout_marginRight="10dp"
+                android:gravity="left"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:gravity="left">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Amount_Due_toPay"
+                android:textColor="#000000"
+                android:text=" Vendor DuePayment/Expected Change"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_weight="0.5"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="0px"
+                android:gravity="left|center_horizontal"
+
+                />
+            <TextView
+
+                android:layout_width="250px"
+                android:layout_height="40px"
+                android:layout_marginRight="10dp"
+                android:id="@+id/VendorDuePayAmount"
+                android:textColor="#000000"
+                android:hint=" Amount Due"
+                android:fontFamily="sans-serif"
+                android:textSize="18px"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="45px"
+                android:gravity="left"
+
+                />
+        </LinearLayout>
+
+       <!-- <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:gravity="left">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ExpectedChange"
+                android:textColor="#000000"
+                android:text=" Expected change"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_weight="0.54"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="0px"
+                android:gravity="left|center_horizontal"
+
+                />
+            <TextView
+
+                android:layout_width="250px"
+                android:layout_height="40px"
+                android:layout_marginRight="10dp"
+                android:id="@+id/ExpectedValueBox"
+                android:textColor="#000000"
+                android:hint=" Amount Due"
+                android:fontFamily="sans-serif"
+                android:textSize="18px"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="215px"
+                android:gravity="left"
+
+                />
+        </LinearLayout>-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="50dp"
+            android:weightSum="1.0"
+            android:gravity="left">
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="70dp"
+                android:layout_height="50px"
+                android:layout_weight="0.5"
+                android:id="@+id/Paybycashbtn"
+                android:textColor="#ffffff"
+                android:text=" PAY BY CASH "
+                android:fontFamily="sans-serif"
+                android:onClick="view"
+                android:background="#ff3300"
+
+                />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="50px"
+                android:id="@+id/paybychequebtn"
+                android:layout_weight="0.5"
+                android:textColor="#ffffff"
+                android:text=" PAY BY CHEQUE "
+                android:fontFamily="sans-serif"
+                android:onClick="view"
+                android:background="#ff3300"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

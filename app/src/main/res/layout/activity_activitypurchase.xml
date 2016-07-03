@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.retail_99_solutions.Purchase_Page"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="#FF9033">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="100.0"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/purchaseimage"
+            android:src="@drawable/purchase"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="34.5"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/inventoryimage"
+            android:src="@drawable/inventory"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton15"
+            android:layout_toEndOf="@+id/imageButton15"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="34.5"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/invoiceimage"
+            android:src="@drawable/vendorpayments"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageButton16"
+            android:layout_weight="34.5"
+            android:layout_marginEnd="5dp"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/vendorreturn"
+            android:src="@drawable/vendorreturns"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="34.5"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+</LinearLayout>

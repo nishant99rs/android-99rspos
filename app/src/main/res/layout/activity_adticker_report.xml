@@ -1,0 +1,224 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:clickable="false"
+    android:weightSum="100.0"
+    android:background="#ff9033"
+    android:divider="@android:color/background_light">
+
+    <LinearLayout
+        android:id="@+id/Layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Select From Month"
+            android:textColor="#000000"
+            android:id="@+id/from"
+            android:textStyle="bold"
+            android:ems="10"
+            android:textSize="14dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="left" />
+
+        <Spinner
+            android:id="@+id/AdvtFromDate"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:ems="10"
+            android:spinnerMode="dropdown"
+            android:textSize="12px"
+            android:focusable="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/border_style"
+            android:layout_gravity="center_vertical"/>
+
+        <Spinner
+            android:id="@+id/AdvtFromMonth"
+            android:layout_width="190dp"
+            android:layout_height="44dp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:ems="10"
+            android:spinnerMode="dropdown"
+            android:textSize="12px"
+            android:focusable="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/border_style"
+            android:layout_gravity="center_vertical"/>
+
+        <Spinner
+            android:id="@+id/AdvtFromYear"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:ems="10"
+            android:spinnerMode="dropdown"
+            android:textSize="12px"
+            android:focusable="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/border_style"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Select To Month"
+            android:textColor="#000000"
+            android:id="@+id/to"
+            android:textStyle="bold"
+            android:ems="10"
+            android:textSize="14dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="left" />
+
+        <Spinner
+            android:id="@+id/AdvtToDate"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:ems="10"
+            android:spinnerMode="dropdown"
+            android:textSize="12px"
+            android:focusable="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/border_style"
+            android:layout_gravity="center_vertical"/>
+
+        <Spinner
+            android:id="@+id/AdvtToMonth"
+            android:layout_width="190dp"
+            android:layout_height="44dp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:ems="10"
+            android:spinnerMode="dropdown"
+            android:textSize="12px"
+            android:focusable="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/border_style"
+            android:layout_gravity="center_vertical"/>
+
+        <Spinner
+            android:id="@+id/AdvtToYear"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:ems="10"
+            android:spinnerMode="dropdown"
+            android:textSize="12px"
+            android:focusable="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/border_style"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="280dp"
+        android:paddingBottom="4dp"
+        android:id="@+id/layout4">
+
+        <Button
+            android:id="@+id/Submit"
+            android:text="Submit"
+            android:background="#009985"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingTop="5dp"
+        android:background="#4a4a4a"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4a4a4a">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="ADVERTISEMENT ID"
+                android:textColor="#ffffff"
+                android:id="@+id/tvId"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:fontFamily="sans_serif"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="ADVERTISEMENT TEXT"
+                android:textColor="#ffffff"
+                android:id="@+id/tvText"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:fontFamily="sans_serif"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="AD COST SLB1"
+                android:textColor="#ffffff"
+                android:id="@+id/tvTotal"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:fontFamily="sans_serif"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout3"
+        android:textColor="#000000"
+        android:layout_below="@+id/linearlayout1">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="#ffffff"
+            android:id="@+id/lv_AdTickerReport" />
+    </LinearLayout>
+
+</LinearLayout>

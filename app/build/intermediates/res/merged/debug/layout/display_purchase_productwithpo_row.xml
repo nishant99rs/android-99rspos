@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="50dp"
+    android:background="#ffffff"
+    android:id="@+id/Sub"
+    >
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_alignParentStart="true"
+        android:textAlignment="textStart"
+        android:layout_weight="10.0"
+        android:layout_below="@id/layout1"
+        >
+
+        <!--<TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="PO_NO"
+            android:id="@+id/Purchaseno"
+            android:textColor="#ffffff"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:textSize="14px"
+            />
+
+        &lt;!&ndash;    <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/PurchaseproductPrice"
+                android:layout_weight="10.0"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:ems="10"
+            android:text="PROD_ID"
+            android:id="@+id/productid"
+            android:layout_weight="3.72"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:textSize="14px"/>
+
+        --><TextView
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="PROD_NAME"
+        android:id="@+id/productname"
+        android:textColor="#000000"
+        android:gravity="fill_vertical"
+        android:ems="10"
+        android:fontFamily="Roboto"
+        android:textSize="12px"
+
+        />
+        <EditText
+            android:id="@+id/BatchNumber"
+            android:layout_height="40dp"
+            android:layout_width="58dp"
+            android:text=""
+            android:textColor="#000000"
+            android:ems="10"
+            android:digits="a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,y,z,0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X,Y,Z"
+            android:fontFamily="Roboto"
+            android:textSize="12px"
+            android:maxLength="12"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge">
+
+
+            ></EditText>
+        <EditText
+            android:id="@+id/Exp_date"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:singleLine="true"
+          android:focusable="false"
+            android:textSize="12px"
+            android:fontFamily="Roboto"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:entries="@array/active_array"
+            android:prompt="@string/select2"
+            />
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="MRP"
+            android:id="@+id/mrp"
+            android:inputType="number"
+            android:maxLength="9"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:ems="10"
+            android:fontFamily="Roboto"
+            android:textSize="12px"/>
+        <EditText
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="S_PRICE"
+            android:inputType="number"
+            android:maxLength="9"
+            android:id="@+id/sprice"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:ems="10"
+            android:fontFamily="Roboto"
+            android:textSize="12px"/>
+
+
+
+        <EditText
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="P_PRICE"
+            android:id="@+id/pprice"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:maxLength="9"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:textSize="12px"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="MARGIN"
+            android:id="@+id/inventorymargin"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:maxLength="6"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:textSize="12px"/>
+
+        <EditText
+            android:id="@+id/qty"
+            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:text="qty "
+            android:textColor="#000000"
+            android:ems="10"
+            android:selectAllOnFocus="true"
+            android:inputType="number"
+            android:fontFamily="sans-serif"
+            android:textSize="12px"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge">
+            ></EditText>
+
+        <EditText
+            android:id="@+id/disc"
+            android:layout_width="50px"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:text="0.0"
+            android:ems="10"
+            android:selectAllOnFocus="true"
+            android:fontFamily="sans-serif"
+            android:textSize="12px"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+
+
+            />
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="T_qty"
+            android:id="@+id/totalqty"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:textSize="12px"/>
+
+
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="UOM"
+            android:id="@+id/uom"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:textSize="12px"/>
+
+        <TextView
+            android:layout_width="53dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:text="TOTAL"
+            android:ems="10"
+            android:id="@+id/totalval"
+            android:textSize="12px"
+            android:fontFamily="sans-serif"
+            android:gravity="center"/>
+
+
+        <ImageButton
+
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            android:layout_gravity="left"
+            android:background="#ffffff"
+            android:src="@drawable/cross_arrow_icon"
+            android:id="@+id/deleteButton" />
+
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="MARGIN"
+            android:id="@+id/inventoryindustery"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:maxLength="6"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:textSize="12px"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="MARGIN"
+            android:id="@+id/inventoryconversion"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:maxLength="6"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:textSize="12px"/>
+
+        <!-- <TextView android:id="@+id/rowtvStoreId"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:paddingLeft="20dp"
+             android:layout_toRightOf="@+id/rowtvAd_Main_Id"
+             android:text="1234535"
+             android:textColor="#000000"
+             android:textSize="20dp"
+             android:gravity="center"
+             android:textAppearance="?android:textAppearanceLarge"
+             ></TextView>-->
+        <!-- <TextView android:id="@+id/rowtvAd_Start_Date"
+             android:layout_height="wrap_content"
+             android:layout_width="275dp"
+             android:paddingLeft="5dp"
+             android:layout_weight="0.5"
+             android:layout_toRightOf="@+id/rowtvStoreId"
+             android:text="122345678"
+             android:textColor="#ffffff"
+             android:textSize="30dp"
+             android:gravity="center"
+             android:textAppearance="?android:textAppearanceLarge"
+             ></TextView>
+         <TextView android:id="@+id/rowtvAd_End_Date"
+             android:layout_height="wrap_content"
+             android:layout_width="275dp"
+             android:paddingLeft="5dp"
+             android:layout_toRightOf="@+id/rowtvAd_Start_Date"
+             android:text="109876543"
+             android:layout_weight="0.5"
+             android:textColor="#ffffff"
+             android:textSize="30dp"
+             android:gravity="center"
+             android:textAppearance="?android:textAppearanceLarge"
+             ></TextView>-->
+        <!--       <TextView android:id="@+id/rowtvAd_Cst_Slb1"
+                   android:layout_height="wrap_content"
+                   android:layout_width="80dp"
+                   android:paddingLeft="5dp"
+                   android:layout_weight="0.1"
+                   android:layout_toRightOf="@+id/rowtvAd_End_Date"
+                   android:text="1234456787"
+                   android:textColor="#ffffff"
+                   android:textSize="30dp"
+                   android:gravity="center"
+                   android:textAppearance="?android:textAppearanceLarge"
+                   ></TextView>
+               <TextView android:id="@+id/rowtvAd_Cst_Slb2"
+                   android:layout_height="wrap_content"
+                   android:layout_width="80dp"
+                   android:layout_weight="0.1"
+                   android:paddingLeft="5dp"
+                   android:layout_toRightOf="@+id/rowtvAd_Cst_Slb1"
+                   android:text="99999999"
+                   android:textColor="#ffffff"
+                   android:textSize="30dp"
+                   android:gravity="center"
+                   android:textAppearance="?android:textAppearanceLarge"
+                   ></TextView>
+               <TextView android:id="@+id/rowtvAd_Cst_Slb3"
+                   android:layout_height="wrap_content"
+                   android:layout_width="80dp"
+                   android:layout_weight="0.1"
+                   android:paddingLeft="5dp"
+                   android:text="1098765"
+                   android:textColor="#ffffff"
+                   android:textSize="30dp"
+                   android:gravity="center"
+                   android:textAppearance="?android:textAppearanceLarge"
+                   android:layout_alignParentTop="true"
+                   android:layout_toEndOf="@+id/rowtvAd_Cst_Slb2"></TextView>
+       -->
+    </LinearLayout>
+</RelativeLayout>

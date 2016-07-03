@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff9033</color>
+    <color name="colorPrimaryDark">#ff9033</color>
+    <color name="textColor">#ff9033</color>
+    <color name="windowBackground">#ff9033</color>
+    <color name="navigationBarColor">#ff9033</color>
+    <color name="colorAccent">#ff9033</color>
+
+        <color name="button_pressed">#ff8a00</color>
+    <color name="button_focused">#ff8a00</color>
+        <color name="button_default">#009985</color>
+    <color name="hint_color">#000000</color>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+
+        >
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:text="Mfg_Nm"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:id="@+id/editmfgname"
+            android:textSize="12px"
+
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:text="Target Amount"
+            android:ems="10"
+            android:id="@+id/editmfgtargetamount"
+            android:textSize="12px"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+
+            android:textColor="#000000"
+            android:text="BTL_Desc"
+            android:ems="10"
+            android:id="@+id/editmfgbtldesc"
+            android:textSize="12px"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+
+            android:textColor="#000000"
+            android:text="Target Value"
+            android:ems="10"
+            android:id="@+id/editmfgtargetvalue"
+            android:textSize="12px"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+
+            android:textColor="#000000"
+            android:text="Start Date"
+            android:ems="10"
+            android:id="@+id/editmfgstartdate"
+            android:textSize="12px"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+
+            android:textColor="#000000"
+            android:text="End Date"
+            android:ems="10"
+            android:id="@+id/editmfgenddate"
+            android:textSize="12px"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center_vertical"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

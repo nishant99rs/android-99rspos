@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ff9033"
+
+    tools:context="com.mycompany.apps.GCMIntentService.ReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout1"
+        android:layout_alignParentTop="true"
+
+        >
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009986"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/layout1"
+        >
+
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ticket ID"
+            android:id="@+id/tvTicket_Id"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="14px"
+            android:gravity="center"
+            android:paddingRight="55dp"
+            android:layout_alignParentStart="true" />
+
+        <!-- <TextView
+             android:id="@+id/tvAd_Main_Id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:text="  StoreID"
+             android:textColor="#000000"
+             android:fontFamily="Bold"
+             android:paddingLeft="20dp"
+
+             android:layout_below="@+id/tvStoreId" />-->
+
+        <!-- <TextView
+             android:layout_width="200dp"
+             android:layout_height="50dp"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:text="AD_Start_Date"
+             android:id="@+id/tvAd_Start_Date"
+             android:textColor="#000000"
+             android:fontFamily="Bold"
+             android:paddingLeft="5dp"
+             android:gravity="center"
+             android:layout_below="@+id/tvAd_Main_Id"
+             android:layout_alignParentStart="true" />
+
+         <TextView
+             android:layout_width="200dp"
+             android:layout_height="50dp"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:text="AD_End_Date"
+             android:textColor="#000000"
+             android:fontFamily="Bold"
+             android:paddingLeft="5dp"
+             android:gravity="center"
+             android:id="@+id/tvAd_End_Date"
+             android:layout_below="@+id/tvAd_Start_Date"
+             android:layout_alignParentStart="true" />-->
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ticket Description"
+            android:id="@+id/tvSupport_Ticket_Status"
+            android:layout_below="@+id/tvTicket_Id"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="14px"
+            android:gravity="center"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Date"
+            android:id="@+id/tvdate"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textSize="14px"
+            android:layout_below="@+id/tvSubject_Desc"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ticket Status"
+            android:id="@+id/tvSubject_Desc"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="14px"
+            android:gravity="center"
+            android:layout_below="@+id/tvSupport_Ticket_Status"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Team Member"
+            android:id="@+id/tvTeamMember"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textSize="14px"
+            android:layout_below="@+id/tvSubject_Desc"
+            android:layout_alignParentStart="true" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout3"
+        android:layout_below="@+id/linearlayout1"
+
+        >
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listView" />
+    </LinearLayout>
+
+</RelativeLayout>

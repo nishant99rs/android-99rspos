@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="100.0"
+    android:background="#FF9033">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="50.0"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+
+        android:id="@+id/layer1"
+        >
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/master_storemanagement_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/storeretail"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_weight="12.5"
+            android:layout_marginEnd="5dp"
+            android:scaleType="fitCenter"
+            android:onClick="View"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/master_productmanagement_button"
+            android:src="@drawable/productpharmanew"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton5"
+            android:layout_alignBottom="@+id/imageButton5"
+            android:layout_toEndOf="@+id/imageButton5"
+            android:layout_weight="12.5"
+            android:layout_marginEnd="5dp"
+            android:scaleType="fitCenter"
+            android:onClick="View"/>
+
+            <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/master_localproduct_button"
+            android:src="@drawable/localproductnepharma"
+            android:layout_marginEnd="5dp"
+
+            android:layout_weight="12.5 "
+            android:background="@drawable/imagebutton_layout"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/master_localproductcpg_button"
+            android:src="@drawable/local_prod_cpg"
+            android:layout_marginEnd="5dp"
+
+            android:layout_weight="12.5 "
+            android:background="@drawable/imagebutton_layout"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/master_productcpg_button"
+            android:src="@drawable/product_cpg"
+            android:layout_marginEnd="5dp"
+
+            android:layout_weight="12.5 "
+            android:background="@drawable/imagebutton_layout"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50.0"
+        android:id="@+id/Layout_master2"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+
+        android:paddingLeft="5dp"
+        android:layout_below="@id/layer"
+        android:scaleType="fitCenter"
+
+        >
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/master_vendormanagement_button"
+            android:src="@drawable/distributorretail"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton10"
+            android:layout_weight="12.5"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:onClick="View"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/master_schemamanagement_button"
+            android:src="@drawable/schemecompanyretail"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="12.5"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:onClick="View"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/master_custmanagement_button"
+            android:src="@drawable/customerretails"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton9"
+            android:layout_alignBottom="@+id/imageButton9"
+            android:layout_weight="12.5"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="fitCenter"
+            android:onClick="View"/>
+
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/master_local_vendor_button"
+            android:src="@drawable/localvendorretail"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton9"
+            android:layout_alignBottom="@+id/imageButton9"
+            android:layout_weight="12.5"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="fitCenter"
+            android:onClick="View"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/master__doctor_button"
+            android:src="@drawable/capturingdoctor"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton9"
+            android:layout_alignBottom="@+id/imageButton9"
+            android:layout_weight="12.5"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="fitCenter"
+            android:onClick="View"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

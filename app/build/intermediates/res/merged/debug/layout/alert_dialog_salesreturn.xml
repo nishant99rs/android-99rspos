@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="#fffdd0"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:orientation="vertical"
+        android:id="@+id/alertlayoutheader"
+        android:background="#009985"
+        >
+
+        <TextView
+
+
+            android:layout_width="match_parent"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="28px"
+            android:id="@+id/header"
+            android:gravity="center"
+            android:text="Select Invoice Option"
+           />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:orientation="vertical"
+        android:id="@+id/alertlayoutheader1"
+        android:background="#006790"
+        >
+</LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:id="@+id/alertlayout"
+        android:paddingLeft="70dp"
+        android:gravity="left"
+        android:layout_weight="0.38">
+        <Button
+            android:layout_width="185px"
+            android:layout_height="50px"
+            android:id="@+id/Invoiceno"
+            android:textColor="#000000"
+            android:text="INVOICE NO"
+           android:layout_marginTop="20dp"
+
+            android:textSize="20px"
+            android:fontFamily="sans-serif"
+            android:onClick="view"
+            android:layout_marginLeft="60px"
+            android:layout_marginEnd="20px"
+            android:background="#ff3300"
+  />
+
+        <Button
+            android:layout_marginTop="20dp"
+
+            android:layout_width="190px"
+            android:textSize="20px"
+
+            android:layout_height="50px"
+            android:id="@+id/Noinvoice"
+            android:textColor="#000000"
+            android:text="WITHOUT INVOICE"
+            android:fontFamily="sans-serif"
+            android:onClick="View"
+            android:background="#ff3300"
+            android:layout_marginLeft="60px"
+            android:layout_marginEnd="20px"
+            />
+
+        <EditText
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="5px"
+            android:layout_width="310px"
+            android:textColor="#000000"
+            android:layout_height="50px"
+            android:inputType="text"
+            android:textSize="20px"
+            android:id="@+id/EnterInvoiceno"
+            android:hint="Please Enter Invoiceno"
+            android:background="@drawable/border_style"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_width="125px"
+                android:layout_marginLeft="5px"
+                android:layout_height="50px"
+                android:id="@+id/invoice_submit_button"
+                android:textColor="#000000"
+                android:text=" SUBMIT "
+                android:fontFamily="sans-serif"
+                android:onClick="view"
+                android:background="#ff3300"
+
+                />
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_width="125px"
+                android:layout_marginLeft="50px"
+                android:layout_height="50px"
+                android:id="@+id/Cancel"
+                android:textColor="#000000"
+                android:text="Cancel "
+                android:fontFamily="sans-serif"
+                android:onClick="view"
+                android:background="#ff3300"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+  <!--  <LinearLayout
+        android:id="@id/product_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width=""
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:text="Submit"
+            android:id="@+id/invoice_submit_button"
+            android:textColor="#FFFFFF"
+            android:textSize="20px"
+            android:fontFamily="sans-serif"
+            android:background="#ff3300"
+
+            />
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="125px"
+            android:layout_marginLeft="50px"
+            android:layout_height="50px"
+            android:id="@+id/Cancelbtn"
+            android:textColor="#ffffff"
+            android:text="Cancel "
+            android:fontFamily="sans-serif"
+            android:onClick="view"
+            android:background="#ff3300"
+
+            />
+    </LinearLayout>-->
+
+
+</LinearLayout>

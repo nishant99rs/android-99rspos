@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="100.0"
+    android:background="#FF9033"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50.0"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/layer2"
+        >
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/mastermanagement_button"
+            android:src="@drawable/masterdatamanagement"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="12.5"
+            android:scaleType="fitCenter"
+            android:background="@drawable/imagebutton_layout"
+
+
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/purchase_button"
+            android:src="@drawable/purchasing"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="12.5"
+            android:scaleType="fitCenter"
+
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/sales_button"
+            android:background="@drawable/imagebutton_layout"
+            android:src="@drawable/salesordermanagement"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="12.5"
+            android:scaleType="fitCenter"
+            android:onClick="view"/>
+
+
+
+        <!--<ImageButton-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/Internetorderbutton"-->
+            <!--android:src="@drawable/ic_internet"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginEnd="5dp"-->
+            <!--android:layout_weight="12.5"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:background="@drawable/imagebutton_layout"-->
+
+
+            <!--/>-->
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50.0"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/layer3"
+        >
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/systemsetting_button"
+            android:src="@drawable/systemsettings"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="12.5"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/systemsupport_button"
+            android:src="@drawable/maintainence"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="12.5"
+            android:background="@drawable/imagebutton_layout"
+            android:scaleType="fitCenter"/>
+
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/report_button"
+            android:src="@drawable/report"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_weight="12.5"
+            android:layout_marginEnd="5dp"
+            android:scaleType="fitCenter"
+
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.retail_99_solutions.Purchase_Page"
+    android:orientation="vertical"
+    android:background="#FF9033">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="90.0"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/MasterdataReports"
+            android:text="MasterData Report"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="34.5"
+            android:src="@drawable/masterdata_report"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/MediaReports"
+            android:text="Media Report"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="34.5"
+            android:src="@drawable/media_report"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+           android:text="Purchasing Report"
+           android:id="@+id/PurchasingReports"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton15"
+            android:layout_toEndOf="@+id/imageButton15"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/purchasing_report"
+            android:layout_weight="34.5"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="90.0"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Sales_Reports"
+                android:text="Sales Report"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_weight="34.5"
+            android:scaleType="fitCenter"/>
+
+        <!--<Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Financial_Reports"
+            android:text="Financial Report"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton15"
+            android:layout_toEndOf="@+id/imageButton15"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="34.5"
+            android:scaleType="fitCenter"/>-->
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/OthersReports"
+            android:text="Others"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton15"
+            android:layout_toEndOf="@+id/imageButton15"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="34.5"
+            android:src="@drawable/othersreport"
+            android:scaleType="fitCenter"/>
+</LinearLayout>
+    </LinearLayout>

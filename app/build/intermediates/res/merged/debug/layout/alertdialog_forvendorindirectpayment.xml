@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fffdd0"
+    android:padding="15dp"
+    android:weightSum="1">
+
+    <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:gravity="left"
+        android:weightSum="1">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectBank1"
+                android:textColor="#000000"
+                android:text=" Select YourBank"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="0px"
+                android:gravity="left"
+
+
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="120px"
+                android:id="@+id/selectBank"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/border_style"
+                android:layout_weight="0.25" />
+
+        </LinearLayout>
+    <!--<LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:gravity="left"
+        android:weightSum="1">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectIFSC1"
+            android:textColor="#000000"
+            android:text=" Select IFSC          "
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="0px"
+            android:gravity="center"
+
+
+            />
+        <Spinner
+            android:layout_marginEnd="10dp"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:id="@+id/selectIFSC"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/border_style" />
+
+    </LinearLayout>-->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:gravity="left"
+        android:weightSum="1">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EnterCheque"
+            android:textColor="#000000"
+            android:text=" Enter Cheque"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="0px"
+            android:gravity="left"
+
+
+            />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="45px"
+            android:layout_width="match_parent"
+            android:textColor="#000000"
+            android:maxLength="20"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/EnterCheque1"
+            android:hint="Please Enter ChequeNumber"
+            android:background="@drawable/border_style"/>
+        </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:weightSum="1">
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitpaymentbtn"
+            android:textColor="#ffffff"
+            android:text=" SUBMIT "
+            android:ems="12"
+            android:fontFamily="sans-serif"
+            android:onClick="view"
+            android:background="#ff3300"
+
+            />
+        </LinearLayout>
+    </LinearLayout>

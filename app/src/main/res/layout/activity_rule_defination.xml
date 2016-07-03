@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ff9033"
+
+    tools:context="com.mycompany.apps.GCMIntentService.ReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout1"
+        android:layout_alignParentTop="true"
+
+        >
+        <!-- <Spinner
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:id="@+id/spinner"
+             android:layout_alignParentStart="true" />-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009986"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/layout1"
+        >
+
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="SNO"
+            android:id="@+id/tvAd_Main_Id"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="18px"
+            android:gravity="center"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Card Type"
+            android:id="@+id/tvAd_Text"
+            android:layout_below="@+id/tvAd_Main_Id"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="18px"
+            android:gravity="center"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Base value"
+            android:id="@+id/tvAd_Cst_Slb1"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="18px"
+
+            android:gravity="center"
+            android:layout_below="@+id/tvAd_End_Date"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ton Points"
+            android:id="@+id/tvPer_Ton_Points"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="18px"
+
+            android:gravity="center"
+            android:layout_alignParentStart="true" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout3"
+        android:layout_below="@+id/linearlayout1"
+        android:paddingBottom="20dp"
+        >
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/lv_retail_RuleDefination" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycompany.apps"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="com.mycompany.apps.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+   <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:icon="@drawable/w"
+        android:label=""
+        android:windowSoftInputMode="stateAlwaysHidden">
+        <activity
+            android:name=".Activity_Installation"
+            android:label=""
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GoSyncActivity"
+            android:label="" />
+        <receiver android:enabled="true"
+            android:name=".BootUpReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="com.mycompany.apps" />
+            </intent-filter>
+        </receiver>
+
+        <!-- <meta-data -->
+        <!-- android:name="android.app.searchable" -->
+        <!-- android:resource="@xml/searchable" /> -->
+
+        <service android:name=".GCMIntentService" />
+        <service android:name=".SyncService" />
+
+        <activity
+            android:name=".ActivityCustomer"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ReportVendorReturnActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+
+        <activity
+            android:name=".Activity_masterScreen1"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".Activity_masterScreen2"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ActivityVendor"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".login"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ActivityLocalProduct"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ActivityTax"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ActivityStore"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ReportSalesReturnWithInvoiceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ReportSalesReturnWithoutInvoiceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".SalesReturnReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ActivityProduct"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".Activitypurchase"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ActivitySales"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ActivityDayOpen"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ActivityTender"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ActivityScheme"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ActivityMaintain"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".ActivitylocalVendor"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+
+        <service android:name=".SyncService" />
+        <service android:name=".GCMIntentService" />
+
+        <activity
+            android:name=".ActivityReportMain"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".ReportActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".BlinkinglogoActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".ActivityMainMaintainence"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".maintainenecereport"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activityinternetbill"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".BiilinternetActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".PurchaseActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activity_Media"
+            android:label="" />
+        <activity
+            android:name=".activity_inventory"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+
+        <receiver
+            android:name=".GoDBSyncAlarmManager"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ActivityLoyality"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".ShowPurchaselistActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activity_lineitem_discount"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activity_Top_Product"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".ProcurementReportActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activityloyalitydefine"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activityloyalityaccural"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activityreport"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Additems"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".ActivityLoyalityCust"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activity_Loyalty_Report"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".LoyaltyReportActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".RetailCarddefineActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".ActivityInvoice"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".VendorIndirectPaymentActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".VendorPaymentActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity_inventorywithpo"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".RuleDefinationActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".VendorReturnActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".ActivitySalesreturn"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".GMainActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activityvendorpayment"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".ActivitySalesbill"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activity_Comp_Btl"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activity_Mfg_btl"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".UserManagementActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activity_Salesreturn_withoutinvoiceno"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activitylocalproductcpg"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activityproductcpg"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".ProductPharmaReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ProductCpgReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AdTickerReportActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".BlinkingLogoReportActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".MainAdvertisementReportActivity"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activity_Doctor"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity android:name=".MasterDataReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity android:name=".MediaReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity android:name=".DistributorReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity android:name=".VendorReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity android:name=".LocalProductPharmaReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity android:name=".LocalProductCpgReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity android:name=".PurchasingReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+
+        <activity android:name=".SaleReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+
+        <activity android:name=".ReportSaleActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+
+        <activity android:name=".ShowSaleListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+
+        <activity android:name=".ShowSalesReturnWithInvoiceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+
+        <activity android:name=".ShowSalesReturnWithoutInvoiceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+
+        <activity android:name=".ReportTabActivityInventory"
+            android:theme="@style/Theme.NoTitleBar" />
+
+
+        <activity android:name=".ReportTabActivityVendorPayment"
+            android:theme="@style/Theme.NoTitleBar" />
+
+        <activity android:name=".ReportTabActivityMasterData"
+            android:theme="@style/Theme.NoTitleBar" />
+        <activity android:name=".Activity_Bill_Level"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Theme.NoTitleBar" />
+
+        <activity android:name=".CustomerRejection"
+            android:theme="@style/Theme.NoTitleBar" />
+
+
+        <activity android:name=".VendorRejection"
+            android:theme="@style/Theme.NoTitleBar" />
+
+
+    </application>
+
+</manifest>

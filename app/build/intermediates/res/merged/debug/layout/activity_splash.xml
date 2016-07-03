@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ff9033"
+    android:orientation="vertical"
+    android:clickable="false"
+    android:weightSum="100.0">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layerab"
+    android:paddingTop="20dp">
+
+
+
+    <ImageButton
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mastermanagement_button"
+        android:src="@drawable/w"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="12.5"
+        android:scaleType="fitCenter"
+        android:background="@drawable/imagebutton_layout"
+        />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:id="@+id/layer">
+
+</LinearLayout>
+    <ProgressBar
+        android:id="@+id/Splash_ProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/layerab"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/TestSyncButton"
+        android:onClick="Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+
+
+   <!-- <TextView
+        android:id="@+id/abc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="bottom"
+        android:foregroundGravity="bottom"
+         android:text="  99 Retail Solutions Pvt. Ltd."
+        android:textColor="#A52A2A"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-medium" />
+-->
+
+</RelativeLayout>

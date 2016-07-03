@@ -1,0 +1,422 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100.0"
+    android:background="#ff9033"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_weight="100.0"
+        android:paddingTop="5dp"
+        >
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Store Id"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:id="@+id/textView3"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="80dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+
+                    android:textColor="#000000"
+                    android:ems="10"
+                    android:id="@+id/Store_Storeid"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                  />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Store Name"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:id="@+id/textView4"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="80dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+
+                    android:textColor="#000000"
+                    android:ems="10"
+                    android:id="@+id/Store_Name"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Address"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:id="@+id/textView11"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="80dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textColor="#000000"
+                    android:ems="10"
+                    android:id="@+id/Store_Address1"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                   />
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textColor="#000000"
+                android:id="@+id/textView14"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="70dp"
+
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+
+                android:ems="10"
+                android:id="@+id/Store_city"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+
+              />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+
+                android:textColor="#000000"
+                android:id="@+id/textView8"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="80dp"
+
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:ems="10"
+                android:textColor="#000000"
+                android:id="@+id/Store_Zip"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+              />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+
+                android:textColor="#000000"
+                android:id="@+id/textView12"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="80dp"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:ems="10"
+                android:textColor="#000000"
+                android:id="@+id/Store_Country"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Contact Name"
+                    android:textColor="#000000"
+                    android:id="@+id/textView6"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="80dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+
+                    android:ems="10"
+                    android:id="@+id/Store_Contact"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+
+                   />
+
+            </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Email"
+                    android:textColor="#000000"
+                    android:id="@+id/textView7"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="80dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:id="@+id/Store_Email"
+                    android:textSize="20sp"
+                    android:paddingRight="20dp"
+
+                    android:gravity="left"
+                />
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Mobile *"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/textView5"
+
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="80dp"
+
+
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHighlight="#Ffffff"
+                android:hint=""
+                android:maxLength="10"
+                android:digits="0,1,2,3,4,5,6,7,8,9"
+                android:ems="10"
+                android:id="@+id/Store_Mobile"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="3.0"
+        android:layout_alignParentBottom="true">
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:id="@+id/Store_update_button"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:text="UPDATE"
+            android:background="@drawable/button_border"
+            android:layout_weight="1.5"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:text="EXIT"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:textColor="#FFFFFF"
+            android:id="@+id/Store_exit_button"
+            android:background="@drawable/button_border"
+            android:layout_weight="1.5"
+           />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

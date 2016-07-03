@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ff9033"
+
+    tools:context="com.mycompany.apps.GCMIntentService.ReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout1"
+        android:layout_alignParentTop="true"
+
+        >
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner1"
+            android:background="#f2ede4"
+            android:textColor="#000000"
+            android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009986"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/layout1"
+        >
+
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="AdvertiseID"
+            android:id="@+id/tvBlinkingAd_Main_Id"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="18px"
+            android:gravity="center"
+            android:layout_alignParentStart="true" />
+
+        <!-- <TextView
+             android:id="@+id/tvAd_Main_Id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:text="  StoreID"
+             android:textColor="#000000"
+             android:fontFamily="Bold"
+             android:paddingLeft="20dp"
+
+             android:layout_below="@+id/tvStoreId" />-->
+
+        <!-- <TextView
+             android:layout_width="200dp"
+             android:layout_height="50dp"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:text="AD_Start_Date"
+             android:id="@+id/tvAd_Start_Date"
+             android:textColor="#000000"
+             android:fontFamily="Bold"
+             android:paddingLeft="5dp"
+             android:gravity="center"
+             android:layout_below="@+id/tvAd_Main_Id"
+             android:layout_alignParentStart="true" />
+
+         <TextView
+             android:layout_width="200dp"
+             android:layout_height="50dp"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:text="AD_End_Date"
+             android:textColor="#000000"
+             android:fontFamily="Bold"
+             android:paddingLeft="5dp"
+             android:gravity="center"
+             android:id="@+id/tvAd_End_Date"
+             android:layout_below="@+id/tvAd_Start_Date"
+             android:layout_alignParentStart="true" />-->
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Advertisement"
+            android:id="@+id/tvBlinkingAd_Text"
+            android:layout_below="@+id/tvBlinkingAd_Main_Id"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="18px"
+            android:gravity="center"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="AD Cost Slb1"
+            android:id="@+id/tvBlinkingAd_Cst_Slb1"
+            android:textColor="#000000"
+            android:textSize="18px"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_below="@+id/tvBlinkingAd_Text"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Slb2"
+            android:id="@+id/tvBlinkingAd_Cst_Slb2"
+            android:textColor="#000000"
+            android:textSize="18px"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_below="@+id/tvBlinkingAd_Cst_Slb1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Slb3"
+            android:id="@+id/tvBlinkingAd_Cst_Slb3"
+            android:textColor="#000000"
+            android:textSize="18px"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_below="@+id/tvBlinkingAd_Cst_Slb2"
+            android:layout_alignEnd="@+id/tvBlinkingAd_Cst_Slb2" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout3"
+        android:layout_below="@+id/linearlayout1"
+        android:paddingBottom="20dp"
+        >
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/lv_blinkinglogo" />
+    </LinearLayout>
+
+</RelativeLayout>
+

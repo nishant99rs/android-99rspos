@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100.0">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="fill_parent"
+            android:text="Item name"
+            android:textColor="#000000"
+            android:textSize="12px"
+            android:id="@+id/PurchaseproductName"
+            android:gravity="center_vertical"/>
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mrp"
+            android:layout_weight="10.0"
+            android:background="#000000"
+            android:id="@+id/PurchaseproductMrp" />
+
+        -->    <EditText
+        android:layout_width="65px"
+        android:layout_height="40px"
+        android:digits="a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,y,z,0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X,Y,Z"
+
+        android:textColor="#000000"
+        android:textSize="12px"
+        android:maxLength="12"
+
+        android:id="@+id/purchasebatchno"
+        android:gravity="center" />
+        <EditText
+            android:id="@+id/Exp_date"
+            android:layout_width="95dp"
+            android:layout_height="40px"
+            android:singleLine="true"
+           android:focusable="false"
+            android:textSize="12px"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:entries="@array/active_array"
+            android:prompt="@string/select2"
+            />
+
+        <EditText
+            android:layout_width="70px"
+            android:layout_height="40px"
+            android:text="mrp"
+            android:textSize="12px"
+            android:textColor="#000000"
+            android:inputType="number"
+            android:id="@+id/PurchaseproductMrp"
+            android:gravity="center"
+            />
+
+        <EditText android:layout_width="64px"
+            android:layout_height="40px"
+            android:textSize="12px"
+            android:text="Sprice"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:id="@+id/purchaseselling"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="64px"
+            android:layout_height="40px"
+            android:textSize="12px"
+            android:text="Pprice"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:id="@+id/purchaseprice"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="MARGIN"
+            android:id="@+id/inventorymargin"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:maxLength="6"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:textSize="12px"/>
+
+
+        <EditText
+            android:layout_width="55px"
+            android:layout_height="40px"
+            android:inputType="number"
+            android:text="quanty"
+            android:textSize="12px"
+            android:textColor="#000000"
+            android:selectAllOnFocus="true"
+            android:id="@+id/purchasequantity"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="55px"
+            android:layout_height="40px"
+            android:inputType="number"
+            android:text="discount"
+            android:textSize="12px"
+            android:textColor="#000000"
+            android:id="@+id/discountwithoutpo"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="50px"
+            android:layout_height="40px"
+            android:text=""
+            android:textSize="12px"
+            android:inputType="number"
+
+            android:textColor="#000000"
+            android:id="@+id/totalqty"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="50px"
+            android:layout_height="40px"
+            android:text="Measure"
+            android:textSize="12px"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:id="@+id/purchasemeasure"
+            android:gravity="center_horizontal"/>
+
+
+        <TextView
+            android:id="@+id/we"
+            android:layout_width="50px"
+            android:layout_height="40px"
+            android:textColor="#000000"
+            android:text="Total"
+            android:textSize="12px"
+            android:gravity="center"
+
+            />
+        <ImageButton
+
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:layout_gravity="center"
+            android:src="@drawable/cross_arrow_icon"
+            android:background="#ffffff"
+            android:id="@+id/deleteButton" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="MARGIN"
+            android:id="@+id/inventoryindustery"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:maxLength="6"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:textSize="12px"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="MARGIN"
+            android:id="@+id/inventoryconversion"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:maxLength="6"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:textSize="12px"/>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+

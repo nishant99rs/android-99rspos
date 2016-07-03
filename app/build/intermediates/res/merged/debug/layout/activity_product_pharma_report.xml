@@ -1,0 +1,210 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:clickable="false"
+    android:weightSum="100.0"
+    android:background="#ff9033"
+    android:divider="@android:color/background_light">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="2dp">
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:text="Product Name"
+            android:textColor="#000000"
+            android:id="@+id/id"
+            android:textStyle="bold"
+            android:ems="10"
+            android:textSize="14dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="left" />
+
+        <com.mycompany.apps.CustomAuto
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="580dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:fontFamily="sans-serif"
+            android:inputType="textAutoComplete"
+            android:textSize="14px"
+            android:background="@drawable/border_style"
+            android:focusable="true"
+            android:hint="Select Product Name"
+            android:textColorHint="@color/hint_color"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:paddingTop="5dp"
+        android:paddingBottom="2dp">
+
+        <TextView
+            android:text="Active*"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:id="@+id/actve"
+            android:textStyle="bold"
+            android:ems="10"
+            android:textSize="14dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="left" />
+
+        <Spinner
+            android:id="@+id/activeProdPharma"
+            android:layout_width="580dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:inputType="textAutoComplete"
+            android:textSize="14px"
+            android:background="@drawable/border_style"
+            android:focusable="true"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:weightSum="210.0"
+        android:paddingTop="5dp"
+        android:background="#4a4a4a"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="2dp">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:text="PRODUCT NAME"
+            android:id="@+id/tvProdctNm"
+            android:textColor="#ffffff"
+            android:layout_weight="30.0"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:fontFamily="sans_serif"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:text="BAR CODE"
+            android:id="@+id/tvCode"
+            android:textColor="#ffffff"
+            android:layout_weight="30.0"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:fontFamily="sans_serif"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:text="MRP"
+            android:id="@+id/tvMrp"
+            android:textColor="#ffffff"
+            android:layout_weight="30.0"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:fontFamily="sans_serif"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:text="S PRICE"
+            android:id="@+id/tvSPrice"
+            android:textColor="#ffffff"
+            android:layout_weight="30.0"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:fontFamily="sans_serif"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:text="P PRICE"
+            android:id="@+id/tvPPrice"
+            android:textColor="#ffffff"
+            android:layout_weight="30.0"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:fontFamily="sans_serif"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:text="ACTIVE"
+            android:id="@+id/tvActve"
+            android:textColor="#ffffff"
+            android:layout_weight="30.0"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:fontFamily="sans_serif"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:text="MARGIN"
+            android:id="@+id/tvMargin"
+            android:textColor="#ffffff"
+            android:layout_weight="30.0"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:fontFamily="sans_serif"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout3"
+        android:textColor="#000000"
+        android:layout_below="@+id/linearlayout1">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="#ffffff"
+            android:id="@+id/lv_ProductReport" />
+    </LinearLayout>
+
+</LinearLayout>

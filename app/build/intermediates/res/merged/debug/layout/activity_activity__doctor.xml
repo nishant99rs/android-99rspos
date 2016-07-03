@@ -1,0 +1,402 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="#ff9033"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:id="@+id/buttons_layout1"
+        android:paddingTop="10dp"
+        android:layout_weight="100.0"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:id="@+id/autolayout"
+            android:paddingRight="30dp"
+            android:paddingTop="5dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Search"
+                android:textColor="#000000"
+                android:id="@+id/textView0"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="80dp"
+                />
+            <com.mycompany.apps.CustomAuto
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:singleLine="true"
+                android:completionThreshold="1"
+                android:textColor="#000000"
+                android:hint="DOCTOR NAME"
+                android:textSize="14px"
+                android:id="@+id/myautocomplete"
+                android:background="@drawable/border_style">
+            </com.mycompany.apps.CustomAuto>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:id="@+id/Hiddenlayout1"
+            android:paddingTop="10dp"
+            android:visibility="visible"
+            android:layout_weight="50.0"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:weightSum="1.0"
+                android:paddingRight="30dp"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Doctor Name"
+                    android:textColor="#000000"
+                    android:id="@+id/textViewhidden"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="80dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textColor="#000000"
+                    android:ems="10"
+                    android:id="@+id/Cust_mobileno1"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Specialization"
+                    android:textColor="#000000"
+                    android:id="@+id/textViewhidden2"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="80dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textColor="#000000"
+                    android:ems="5"
+                    android:id="@+id/Cust_name2"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+
+                    />
+
+            </LinearLayout>
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Specialization"
+                    android:textColor="#000000"
+                    android:id="@+id/textViewemailhidden"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="80dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/Cust_email2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textColor="#000000"
+                    android:ems="5"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border_style"
+                    />
+
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:id="@+id/Hiddenlayoutfo"
+                android:visibility="invisible"
+                android:paddingTop="10dp"
+                android:layout_weight="100"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="1.0"
+                    android:paddingRight="30dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Mobile Number"
+                        android:textColor="#000000"
+                        android:id="@+id/textViewhid"
+                        android:fontFamily="sans-serif"
+                        android:textSize="20px"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:paddingLeft="80dp"
+                        />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:inputType="number"
+                        android:textColor="#000000"
+                        android:ems="10"
+                        android:id="@+id/Cust_mobilenohidd"
+                        android:textSize="20px"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:id="@+id/Hiddenlayout"
+            android:visibility="invisible"
+            android:paddingTop="10dp"
+            android:layout_weight="100"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:weightSum="1.0"
+                android:paddingRight="30dp"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Doctor Name *"
+                    android:textColor="#000000"
+                    android:id="@+id/textView1"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="80dp"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:ems="10"
+                    android:id="@+id/Cust_mobileno"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border_style" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Address *"
+                    android:textColor="#000000"
+                    android:id="@+id/textView2"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="80dp"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:inputType="textPostalAddress"
+                    android:textColor="#000000"
+                    android:ems="5"
+                    android:id="@+id/Cust_name"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border_style" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Specialization *"
+                    android:textColor="#000000"
+                    android:id="@+id/textViewemail"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="80dp"
+                    />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.6"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:ems="5"
+                    android:id="@+id/doctor_special"
+                    android:textSize="15px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border_style" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="CREATE"
+                android:textSize="20px"
+                android:id="@+id/Cust_ok_button"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_border"
+
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="CLEAR"
+                android:textSize="20px"
+                android:id="@+id/Cust_clear_button"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_border"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="EXIT"
+                android:textSize="20px"
+                android:id="@+id/Cust_Exit_button"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_border"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

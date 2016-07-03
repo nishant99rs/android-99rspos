@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="20.0"
+    android:background="#fffdd0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="false"
+        android:background="#607D8B"
+
+
+        >
+        <TextView android:layout_width="110px"
+            android:layout_height="30px"
+            android:gravity="left"
+            android:text="APPLY DISCOUNT"
+            android:focusable="false"
+            android:textSize="12px"
+            android:paddingTop="5dp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="false"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+
+
+
+        >
+        <TextView android:layout_width="190dp"
+            android:layout_height="35dp"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="12px"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:id="@+id/frgmarque"
+            android:text="COMING SOON.....COMING SOON.....COMING SOON.... "
+            android:focusable="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:textAllCaps="true"
+            android:selectAllOnFocus="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:fontFamily="sans-serif"
+            android:layout_centerInParent="true"/>
+
+    </LinearLayout>
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:focusable="false"
+         android:paddingTop="10dp"
+
+         >
+
+
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:paddingTop="10dp"
+             android:focusable="false"
+             android:paddingLeft="5dp"
+
+
+             >
+
+
+
+             <TextView
+                 android:layout_width="68px"
+                 android:layout_height="38px"
+                 android:textColor="#000000"
+                 android:text="CLEAR"
+                 android:focusable="false"
+                 android:ems="10"
+                 android:id="@+id/clear"
+                 android:textSize="14px"
+
+                 android:layout_marginEnd="5dp"
+                 android:background="@drawable/border_discount"
+                 android:layout_gravity="center_vertical"
+                 />
+
+             <TextView
+                 android:layout_width="68px"
+                 android:layout_height="38px"
+                 android:textColor="#000000"
+                 android:text="5%"
+                 android:ems="10"
+                 android:focusable="false"
+                 android:id="@+id/discount5"
+                 android:textSize="14px"
+                 android:layout_marginEnd="5dp"
+                 android:background="@drawable/border_discount"
+                 android:layout_gravity="center_vertical"
+                 />
+
+             <TextView
+                 android:layout_width="65px"
+                 android:layout_height="38px"
+                 android:textColor="#000000"
+                 android:text="10%"
+                 android:ems="10"
+                 android:focusable="false"
+                 android:id="@+id/discount10"
+                 android:textSize="14px"
+                 android:layout_marginEnd="5dp"
+                 android:background="@drawable/border_discount"
+                 android:layout_gravity="center_vertical"
+                 />
+         </LinearLayout>
+
+     </LinearLayout>
+
+
+
+ <LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal"
+ android:focusable="false"
+ android:paddingTop="10dp"
+
+     >
+
+
+
+
+ <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+     android:focusable="false"
+         android:orientation="horizontal"
+        android:paddingTop="10dp"
+     android:paddingLeft="5dp"
+
+
+
+         >
+
+
+
+         <TextView
+             android:layout_width="68px"
+             android:layout_height="38px"
+             android:textColor="#000000"
+             android:text="15%"
+             android:focusable="false"
+             android:ems="10"
+             android:id="@+id/discounta15"
+             android:textSize="14px"
+             android:layout_marginEnd="5dp"
+             android:background="@drawable/border_discount"
+             android:layout_gravity="center_vertical"
+             />
+
+         <TextView
+             android:layout_width="68px"
+             android:layout_height="38px"
+             android:textColor="#000000"
+             android:focusable="false"
+             android:text="20%"
+             android:ems="10"
+             android:id="@+id/discountb20"
+             android:textSize="14px"
+             android:layout_marginEnd="5dp"
+             android:background="@drawable/border_discount"
+             android:layout_gravity="center_vertical"
+             />
+
+         <TextView
+             android:layout_width="65px"
+             android:layout_height="38px"
+             android:textColor="#000000"
+             android:text="25%"
+             android:focusable="false"
+             android:ems="10"
+             android:id="@+id/discountc25"
+             android:textSize="14px"
+             android:layout_marginEnd="5dp"
+             android:background="@drawable/border_discount"
+             android:layout_gravity="center_vertical"
+             />
+     </LinearLayout>
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingTop="10dp"
+         android:focusable="false"
+
+
+
+         >
+         <TextView android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="left"
+             android:text="ON TOTAL INVOICE"
+             android:textSize="10px"
+             android:focusable="false"
+             android:textColor="#000000"
+             android:paddingTop="5dp"
+             android:paddingLeft="10dp"
+             android:layout_marginEnd="5dp"
+             android:textStyle="bold"
+             android:layout_centerInParent="true"/>
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingTop="10dp"
+         android:focusable="false"
+
+         >
+
+
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:paddingTop="5dp"
+             android:paddingLeft="5dp"
+             android:focusable="false"
+
+
+             >
+
+
+
+             <TextView
+                 android:layout_width="68px"
+                 android:layout_height="38px"
+
+                 android:textColor="#000000"
+                 android:text="CLEAR"
+                 android:ems="10"
+                 android:id="@+id/clear2"
+                 android:focusable="false"
+                 android:textSize="14px"
+                 android:layout_marginEnd="5dp"
+                 android:background="@drawable/border_discount"
+                 android:layout_gravity="center_vertical"
+                 />
+
+             <TextView
+                 android:layout_width="68px"
+                 android:layout_height="38px"
+                 android:textColor="#000000"
+                 android:text="5%"
+                 android:ems="10"
+                 android:focusable="false"
+                 android:id="@+id/discountsa5"
+                 android:textSize="14px"
+                 android:layout_marginEnd="5dp"
+                 android:background="@drawable/border_discount"
+                 android:layout_gravity="center_vertical"
+                 />
+
+             <TextView
+                 android:layout_width="65px"
+                 android:layout_height="38px"
+                 android:textColor="#000000"
+                 android:focusable="false"
+                 android:text="10%"
+                 android:ems="10"
+                 android:id="@+id/discountsb10"
+                 android:textSize="14px"
+                 android:layout_marginEnd="5dp"
+                 android:background="@drawable/border_discount"
+                 android:layout_gravity="center_vertical"
+                 />
+         </LinearLayout>
+
+     </LinearLayout>
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingTop="10dp"
+         android:focusable="false"
+
+         >
+
+
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:focusable="false"
+
+             android:paddingTop="10dp"
+             android:paddingLeft="5dp"
+
+
+             >
+
+
+
+             <TextView
+                 android:layout_width="68px"
+                 android:layout_height="38px"
+                 android:textColor="#000000"
+                 android:text="15%"
+                 android:focusable="false"
+                 android:ems="10"
+                 android:id="@+id/discount15"
+                 android:textSize="14px"
+
+                 android:layout_marginEnd="5dp"
+                 android:background="@drawable/border_discount"
+                 android:layout_gravity="center_vertical"
+                 />
+
+             <TextView
+                 android:layout_width="68px"
+                 android:layout_height="38px"
+                 android:textColor="#000000"
+                 android:text="20%"
+                 android:focusable="false"
+                 android:ems="10"
+                 android:id="@+id/discount20"
+                 android:textSize="14px"
+                 android:layout_marginEnd="5dp"
+                 android:background="@drawable/border_discount"
+                 android:layout_gravity="center_vertical"
+                 />
+
+             <TextView
+                 android:layout_width="65px"
+                 android:layout_height="38px"
+                 android:textColor="#000000"
+                 android:text="25%"
+                 android:focusable="false"
+                 android:ems="10"
+                 android:id="@+id/discount25"
+                 android:textSize="14px"
+                 android:layout_marginEnd="5dp"
+                 android:background="@drawable/border_discount"
+                 android:layout_gravity="center_vertical"
+                 />
+         </LinearLayout>
+ </LinearLayout>-->
+</LinearLayout>

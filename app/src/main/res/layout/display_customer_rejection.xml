@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9033">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:paddingTop="2dp"
+        android:paddingLeft="2dp"
+        android:weightSum="4.0"
+
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:text="Id"
+            android:ems="4"
+            android:layout_weight="0.2"
+            android:id="@+id/rejectid"
+            android:textSize="12dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:text="reason"
+            android:ems="10"
+            android:layout_weight="2.3"
+            android:id="@+id/reasonforreject"
+            android:textSize="12dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:text="lastupdate"
+            android:ems="10"
+            android:layout_weight="1"
+            android:id="@+id/lastupdate"
+            android:textSize="12dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageButton
+
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:src="@drawable/cross_arrow_icon"
+            android:id="@+id/deleteButton" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+

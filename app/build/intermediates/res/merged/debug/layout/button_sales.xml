@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="70px"
+        android:layout_height="40px"
+        android:background="#009985"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:text="Add"
+        android:focusable="false"
+        android:ems="10"
+        android:id="@+id/remove"
+        android:textSize="20px"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/button_background"
+        android:onClick="view"
+        />
+
+
+</LinearLayout>
+
+

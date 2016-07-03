@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.retail_99_solutions.Purchase_Page"
+    android:orientation="vertical"
+    android:background="#FF9033">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="50.0"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/loyal1"
+            android:src="@drawable/customerloyalty"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="16.6"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/loyal5"
+            android:src="@drawable/usermanagement"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="16.6"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/loyal2"
+            android:src="@drawable/loyaltyahead"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton15"
+            android:layout_toEndOf="@+id/imageButton15"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="16.6"
+            android:scaleType="fitCenter"/>
+        <!--<Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/loyal7"
+            android:text="Bill level Discount"
+            android:textColor="#000000"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton15"
+            android:layout_toEndOf="@+id/imageButton15"
+            android:visibility="invisible"
+            android:layout_marginEnd="5dp"
+            android:textSize="12px"
+            android:layout_weight="16.6"
+            android:scaleType="fitCenter"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/loyal8"
+            android:text="Line Item Discount"
+            android:textColor="#000000"
+            android:visibility="invisible"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton15"
+            android:layout_toEndOf="@+id/imageButton15"
+            android:layout_marginEnd="5dp"
+            android:textSize="12px"
+            android:layout_weight="16.6"
+            android:scaleType="fitCenter"/>-->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/loyal10"
+            android:text="Vendor Rejection"
+            android:textColor="#000000"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignTop="@+id/imageButton15"
+            android:layout_toEndOf="@+id/imageButton15"
+            android:layout_marginEnd="5dp"
+            android:textSize="12px"
+            android:layout_weight="16.6"
+            android:scaleType="fitCenter"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="50.0"
+            android:paddingBottom="5dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/loyal3"
+            android:src="@drawable/reportgeneration"
+            android:background="@drawable/imagebutton_layout"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageButton16"
+            android:layout_weight="16.6"
+            android:textSize="12px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="fitCenter"/>
+
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/loyal4"
+                android:src="@drawable/ticketgeneration"
+                android:background="@drawable/imagebutton_layout"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imageButton16"
+                android:layout_weight="16.6"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:scaleType="fitCenter"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/loyal6"
+                android:src="@drawable/top15product"
+                android:background="@drawable/imagebutton_layout"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imageButton16"
+                android:layout_weight="16.6"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:scaleType="fitCenter"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/loyal9"
+                android:text="Customer Rejection"
+                android:textColor="#000000"
+                android:background="@drawable/imagebutton_layout"
+                android:layout_alignTop="@+id/imageButton15"
+                android:layout_toEndOf="@+id/imageButton15"
+                android:layout_marginEnd="5dp"
+                android:textSize="12px"
+                android:layout_weight="16.6"
+                android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+</LinearLayout>

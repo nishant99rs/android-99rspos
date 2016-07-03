@@ -1,0 +1,178 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fffdd0"
+    android:padding="15dp"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+       android:weightSum="1.0"
+    android:paddingLeft="10dp"
+
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_weight="0.9"
+        android:textColor="#000000"
+        android:text="CASH PAYMENT"
+        android:ems="10"
+        android:id="@+id/amount1"
+        android:textSize="18px"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        />
+
+
+
+    <Button
+        android:layout_width="16px"
+        android:layout_height="16px"
+        android:textColor="#FFFFFF"
+        android:id="@+id/search_button"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/cross_arrow_icon"
+        android:onClick="view"
+
+        />
+
+</LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:text="ENTER AMOUNT"
+            android:ems="10"
+            android:id="@+id/entramount_tv"
+            android:textSize="14px"
+            android:gravity="left"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center_vertical"
+            />
+
+
+    <EditText
+        android:id="@+id/entramount"
+        android:layout_width="390px"
+        android:layout_height="40px"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:paddingTop="10dp"
+        android:textColor="#000000"
+        android:gravity="left"
+        android:background="@drawable/border_style"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:inputType="number"
+        android:textColor="#000000"
+        android:text="AMOUNT RECIVED"
+        android:ems="10"
+        android:id="@+id/amtrecived_tv"
+        android:textSize="14px"
+        android:gravity="left"
+        android:fontFamily="sans-serif"
+        android:layout_gravity="center_vertical"
+        />
+
+
+    <EditText
+        android:id="@+id/amtrecived"
+        android:layout_width="390px"
+        android:layout_height="40px"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:textColor="#000000"
+    android:background="@drawable/border_style"
+        android:inputType="textPassword" />
+
+
+<LinearLayout
+
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:paddingTop="10dp"
+android:paddingLeft="10dp"
+
+    >
+
+<TextView
+android:layout_width="150px"
+android:layout_height="40px"
+android:paddingBottom="10dp"
+android:inputType="number"
+android:textColor="#000000"
+android:text="EXPECTED CHANGE"
+android:ems="10"
+android:id="@+id/expectedchange_tv"
+android:textSize="14px"
+android:fontFamily="sans-serif"
+android:layout_gravity="center_vertical"
+    />
+
+    <TextView
+        android:layout_width="160px"
+        android:layout_height="40px"
+        android:paddingBottom="10dp"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:hint="234"
+        android:ems="10"
+        android:id="@+id/expectedcng_amt_tv"
+        android:textSize="14px"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        />
+</LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingLeft="60dp"
+        android:gravity="left"
+
+        >
+
+        <Button
+            android:layout_width="200px"
+            android:layout_height="36px"
+            android:id="@+id/addtopayment_button"
+            android:textColor="#000000"
+            android:text="ADD TO PAYMENT"
+            android:fontFamily="sans-serif"
+            android:onClick="view"
+            android:paddingTop="5dp"
+            android:paddingLeft="25dp"
+            android:background="#ff3300"
+            />
+</LinearLayout>
+   </LinearLayout>

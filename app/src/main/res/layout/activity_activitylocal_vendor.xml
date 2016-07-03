@@ -1,0 +1,590 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9033"
+    >
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="3.0"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="UPDATE"
+            android:id="@+id/localvendor_edit_button"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:background="@drawable/button_border"
+            android:layout_weight="1.0"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="CLEAR"
+            android:id="@+id/localvendor_clear_button"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:background="@drawable/button_border"
+            android:layout_weight="1.0"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="EXIT"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:id="@+id/localvendor_exit_button"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_border"
+            android:layout_weight="1.0"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/buttons_layout"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:weightSum="1.0"
+                android:paddingRight="10dp"
+
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Search"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:textColor="#000000"
+                    android:id="@+id/local_nametextView"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+
+
+                    />
+
+                <com.mycompany.apps.CustomAuto
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:singleLine="true"
+                    android:completionThreshold="1"
+                    android:hint="ENTER VENDOR NAME"
+                    android:inputType=
+                        "textCapSentences|textAutoCorrect"
+                    android:textColor="#000000"
+                    android:textSize="20px"
+                    android:id="@+id/myautocomplete"
+                    android:background="@drawable/border_style">
+                </com.mycompany.apps.CustomAuto>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:weightSum="1.0"
+                android:paddingRight="10dp"
+
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Vendor ID"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:textColor="#000000"
+                    android:id="@+id/store_nametextView"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:textSize="20px"
+                    android:id="@+id/localvend_vendorid"
+                    android:layout_gravity="center_vertical"
+                  />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Vendor Name * "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:textColor="#000000"
+                    android:id="@+id/store_mobiletextView"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:textSize="20px"
+                    android:id="@+id/localvend_name"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border_style" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:weightSum="1.0"
+                android:paddingRight="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Vendor Contact Name *"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:textColor="#000000"
+                    android:id="@+id/counterid_textView"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:textSize="20px"
+                    android:id="@+id/localvend_contactname"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border_style" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="10.0"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.0"
+                    android:text="Address1"
+                    android:textColor="#000000"
+                    android:id="@+id/address1_textView"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:paddingLeft="80dp"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.0"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/store_address1"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border_style" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Address1 *"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:id="@+id/emailid_textView"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:inputType="textPostalAddress"
+                    android:ems="10"
+                    android:id="@+id/localvend_address1"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border_style" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Country Description *"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:id="@+id/city_textView"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:id="@+id/localvend_countrydesc"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border_style" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingRight="3dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="City *"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:id="@+id/telephone_textView"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:id="@+id/localvend_city"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border_style" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingRight="3dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="MobileNo *"
+                    android:textStyle="bold"
+                    android:maxLength="10"
+                    android:digits="0,1,2,3,4,5,6,7,8,9"
+                    android:textColor="#000000"
+                    android:id="@+id/dstrnum_textView"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:ems="10"
+                    android:id="@+id/localvend_mobilenumber"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border_style" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingRight="3dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Inventory *"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/vendinv_textView"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:id="@+id/localvend_inventory"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border_style" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingRight="3dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Zip *"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/active_textView"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/localvend_zip"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border_style" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:paddingRight="3dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Active *"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/active_textViewv"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    />
+
+                <Spinner
+                    android:id="@+id/localvend_active"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_weight="0.6"
+                    android:maxLength="1"
+                    android:digits="Y,y,N,n"
+                    android:background="@drawable/border_style"
+                    android:textSize="20px"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Telephone *"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:id="@+id/statecountry_textView"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:ems="10"
+                    android:id="@+id/localvend_telephone"
+                    android:textSize="20px"
+
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/border_style" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="prodname"
+            android:fontFamily="sans-serif"
+            android:textSize="12px"
+            android:textColor="#000000"
+            android:id="@+id/productname" />
+        <!--<TextView-->
+            <!--android:layout_width="85dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:text="Medium Text"-->
+            <!--android:fontFamily="sans-serif"-->
+            <!--android:textSize="12px"-->
+            <!--android:textColor="#000000"-->
+            <!--android:id="@+id/productid" />-->
+        <!--<TextView-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:text="Medium Text"-->
+            <!--android:fontFamily="sans-serif"-->
+            <!--android:textSize="12px"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#000000"-->
+            <!--android:id="@+id/batchno" />-->
+        <!--<TextView-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:text="exp"-->
+            <!--android:textSize="12px"-->
+            <!--android:gravity="center"-->
+            <!--android:id="@+id/productexp" />-->
+        <!--<TextView-->
+            <!--android:layout_width="75dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:text="Medium Text"-->
+            <!--android:fontFamily="sans-serif"-->
+            <!--android:textSize="12px"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#000000"-->
+            <!--android:id="@+id/quantity" />-->
+
+
+    </LinearLayout>
+</LinearLayout>

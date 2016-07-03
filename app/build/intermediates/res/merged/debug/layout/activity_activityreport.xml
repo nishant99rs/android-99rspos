@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9033"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.mycompany.apps.Activityreport">
+
+
+    <LinearLayout
+        android:id="@+id/layer"
+        android:layout_above="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="95.0"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginEnd="20dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Report Name"
+                android:textColor="#000000"
+                android:id="@+id/textViewstoteid"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+
+                />
+
+            <Spinner
+                android:id="@+id/Activespin"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:singleLine="true"
+                android:layout_weight="0.6"
+                android:text="@string/text"
+                android:textSize="20px"
+                android:background="@drawable/border_style"
+                android:entries="@array/active_array"
+                android:prompt="@string/select2"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:layout_marginEnd="20dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Report Criteria"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/textViewId"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+
+
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/editreportscriteria"
+                android:textColor="#000000"
+                android:textSize="20px"
+                android:background="@drawable/border_style"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="30dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingTop="5dp"
+            android:layout_marginEnd="20dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Comments"
+                android:textColor="#000000"
+                android:id="@+id/textviewcardtype"
+                android:fontFamily="sans-serif"
+                android:textSize="20px"
+                android:textStyle="bold"
+
+
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+
+
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/editcomments"
+                android:textColor="#000000"
+                android:textSize="20px"
+                android:background="@drawable/border_style"
+                android:paddingRight="30dp"
+                android:layout_gravity="center_vertical"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="5.0"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CREATE"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:background="@drawable/button_border"
+            android:id="@+id/Report_insert"
+            android:textColor="#ffffff"
+            android:layout_weight="2.0"
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:text="EXIT"
+            android:background="@drawable/button_border"
+            android:id="@+id/Report_exit"
+            android:textColor="#ffffff"
+            android:layout_weight="2.0"
+
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

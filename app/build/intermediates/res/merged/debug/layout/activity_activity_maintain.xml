@@ -1,0 +1,331 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="100.0"
+    android:background="#FF9033"
+    >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="23.75"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/layout1"
+        >
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Networking Issues"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:onClick="NetworkingIssues"
+            android:background="@drawable/maintaincne_layout_border"
+            android:id="@+id/Networking_Issues"
+            />
+
+
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Master Data Support"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:onClick="Masterdatasupport"
+            android:background="@drawable/maintaincne_layout_border"
+            android:id="@+id/Masterdatasupport" />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Printer Not working"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:onClick="Printernotworking"
+            android:background="@drawable/maintaincne_layout_border"
+            android:id="@+id/Printernotworking" />
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Scanner Not Working"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/maintaincne_layout_border"
+            android:textColor="#000000"
+            android:textSize="20px"
+            android:fontFamily="sans-serif"
+            android:onClick="Scannernotworking"
+            android:id="@+id/Scannernotworking" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="23.75"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/layout2"
+        >
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Sim Card Not Working"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+
+            android:background="@drawable/maintaincne_layout_border"
+            android:onClick="Simcardnotworking"
+            android:id="@+id/Simcardworking" />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Wallet Not Working"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/maintaincne_layout_border"
+            android:id="@+id/Walletnotworking"
+            android:onClick="Walletnotworking"/>
+
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Purchase Process"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/maintaincne_layout_border"
+            android:id="@+id/Purchaseprocess"
+            android:onClick="Purchaseprocess"/>
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Goods Receipt"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/maintaincne_layout_border"
+            android:id="@+id/Goodsrceipt"
+            android:onClick="Goodsreceipt"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="23.75"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/layout3"
+        >
+
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Invoice Process"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/maintaincne_layout_border"
+            android:id="@+id/Invoiceprocess"
+            android:onClick="Invoiceprocess"/>
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Sales Process"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/maintaincne_layout_border"
+            android:id="@+id/Salesprocess"
+            android:onClick="Salesprocess"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Sales Returns"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/maintaincne_layout_border"
+            android:id="@+id/salesreturn"
+            android:onClick="Salesreturn"/>
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Reporting Error"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/maintaincne_layout_border"
+            android:id="@+id/Reportingerror"
+            android:onClick="Reportingerror"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="23.75"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/layout4"
+        >
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Payments Related"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/maintaincne_layout_border"
+            android:id="@+id/Paymentrelated"
+            android:onClick="Paymentrelated"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Manufacturing Payments"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/maintaincne_layout_border"
+            android:id="@+id/Manufacturingpayment"
+            android:onClick="Manufacturingpayment"/>
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Any Others"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/maintaincne_layout_border"
+            android:id="@+id/button15"
+            android:onClick="Anyothers"/>
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Hardware Crash"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="20px"
+            android:layout_weight="5.6"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/maintaincne_layout_border"
+            android:id="@+id/Hardwarecrash"
+            android:onClick="Hardwarecrash"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.0"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/layer2"
+        >
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+

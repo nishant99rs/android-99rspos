@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="50dp"
+    android:background="#2787A4"
+    android:id="@+id/Sub"
+    >
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2ede4"
+        android:layout_alignParentStart="true"
+        android:textAlignment="textStart"
+        android:layout_weight="10.0"
+        android:layout_below="@id/layout1"
+        >
+
+        <TextView android:id="@+id/rowtvstoreid"
+            android:layout_height="30dp"
+            android:layout_width="120dp"
+            android:layout_alignParentLeft="true"
+            android:text="De"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="14px"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            ></TextView>
+        <TextView
+            android:id="@+id/rowtvid"
+            android:layout_height="30dp"
+            android:layout_width="120dp"
+            android:layout_toRightOf="@+id/rowbilldetailOrder_Id"
+            android:text="India is mycountry"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="14px"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge">
+
+            ></TextView>
+        <TextView android:id="@+id/rowtvcardtype"
+            android:layout_height="30dp"
+            android:layout_width="120dp"
+            android:layout_toRightOf="@+id/rowbilldetailMobile_no"
+            android:text="1234456787"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="14px"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            ></TextView>
+        <TextView android:id="@+id/rowtvPointsRange"
+            android:layout_height="30dp"
+            android:layout_width="120dp"
+            android:layout_toRightOf="@+id/rowbilldetailProductName"
+            android:text="99999999"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textSize="14px"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            ></TextView>
+    </LinearLayout>
+</RelativeLayout>
