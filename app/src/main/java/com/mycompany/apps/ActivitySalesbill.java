@@ -79,7 +79,7 @@ public class ActivitySalesbill extends FragmentActivity implements View.OnClickL
     Spinner doctor;
     String item;
 
-
+///////////////testing from rahul/////////////////////////////////////////
     public static final int MIN_LENGTH_OF_BARCODE_STRING = 13;
     public static final String BARCODE_STRING_PREFIX = "@";
     Handler mHandler;
